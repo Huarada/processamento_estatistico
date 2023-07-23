@@ -1,0 +1,11 @@
+e = 2.71828
+omega = 2*pi*500
+tau = 0.5
+fa = 40*10^3
+T = 2
+N = T*fa
+n = linspace(0,2,N)
+X = sin(omega*n).^3.*e.^(n/tau)
+sound(X, 40000)
+
+r = normrnd(0,desvio,N)
